@@ -1,0 +1,7 @@
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Release\BatchUploadAPIDemo.exe.config
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Release\BatchUploadAPIDemo.exe
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Release\BatchUploadAPIDemo.pdb
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Release\AWSSDK.dll
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Release\AWSSDK.xml
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\obj\Release\BatchUploadAPIDemo.exe
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\obj\Release\BatchUploadAPIDemo.pdb
