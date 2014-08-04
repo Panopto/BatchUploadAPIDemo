@@ -11,7 +11,7 @@ AWSSDK can be downloaded from here: http://aws.amazon.com/s3/
 
 Options for this program is explained below:
 
-BatchUploadAPIDemo.ext SERVER USERNAME USERPASSWORD FOLDERID FILELOCATION FILEPATH [FILEPATH]
+BatchUploadAPIDemo.exe SERVER USERNAME USERPASSWORD FOLDERID FILELOCATION FILEPATH [FILEPATH]
 
 	Upload file at FILELOCATION with path as FILEPATH to session with same name as file in folder with ID as FOLDERID on SERVER logged in with USERNAME and USERPASSWORD
 

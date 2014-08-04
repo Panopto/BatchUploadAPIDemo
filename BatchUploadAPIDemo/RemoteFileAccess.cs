@@ -11,9 +11,9 @@ namespace BatchUploadAPIDemo
 {
     class RemoteFileAccess
     {
-        private static string folder = ".\\temp"; // Storage location of downloaded files, Will be deleted at the end of the program
-        private static string userName;
-        private static string userPassword;
+        private static string folder = null; // Storage location of downloaded files, Will be deleted at the end of the program
+        private static string userName = null;
+        private static string userPassword = null;
 
         /// <summary>
         /// Downloads the file located at given URI to disk for upload
@@ -75,6 +75,10 @@ namespace BatchUploadAPIDemo
             {
                 Directory.Delete(folder, true);
             }
+
+            userName = null;
+            userPassword = null;
+            folder = null;
         }
 
         /// <summary>
@@ -84,6 +88,12 @@ namespace BatchUploadAPIDemo
         /// <returns>Storage path on disk of file to be downloaded</returns>
         private static string GetTempPath(string uri)
         {
+            if (folder == null)
+            {
+                DateTime dt = DateTime.Now;
+                folder = ".\\temp_" + dt.Year + "_" + dt.Month + "_" + dt.Day + "_" + dt.Hour + "_" + dt.Minute + "_" + dt.Second;
+            }
+
             if (!Directory.Exists(folder))
             {
                 Directory.CreateDirectory(folder);
