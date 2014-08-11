@@ -17,6 +17,7 @@ namespace BatchUploadAPIDemo
         private static bool selfSigned = true; // Target server is a self-signed server
         private static bool hasBeenInitialized = false;
         private static long DEFAULT_PARTSIZE = 1048576; // Size of each upload in the multipart upload process
+        private static string extensionString = ".avi;.asf;.wmv;.mpg;.mpeg;.ps;.ts;.m2v;.mp2;.mod;.mp4;.m4v;.mov;.qt;.3gp;.flv;.f4v;.mp3;.wma;.m2a;.m4a;.f4a"; // File types allowed for upload
         private static string[] files = new string[] { "foobar.mp4" };
         private static string userID = "foo";
         private static string userKey = "bar";
@@ -66,6 +67,9 @@ namespace BatchUploadAPIDemo
                     }
 
                     string sessionName = RemoteFileAccess.GetFileName(absoluteFilePath);
+
+                    string[] sessionNameSplit = sessionName.Split('.');
+                    FileTypeCheck("." + sessionNameSplit[sessionNameSplit.Length - 1]);
 
                     UploadAPIWrapper.UploadFile(userID, userKey, folderID, sessionName, absoluteFilePath, DEFAULT_PARTSIZE);
                     Console.WriteLine("Upload {0} Complete.", i + 1);
@@ -128,6 +132,25 @@ namespace BatchUploadAPIDemo
             {
                 return null;
             }
+        }
+
+        /// <summary>
+        /// Checks if file extension given is part of legal extensions
+        /// </summary>
+        /// <param name="fileExt">Extension of file to check</param>
+        private static void FileTypeCheck(string fileExt)
+        {
+            string[] extensions = extensionString.Split(';');
+
+            foreach (string ext in extensions)
+            {
+                if (ext.Equals(fileExt))
+                {
+                    return;
+                }
+            }
+
+            throw new System.IO.InvalidDataException("File Type Not Supported");
         }
 
         //========================= Needed to use self-signed servers
