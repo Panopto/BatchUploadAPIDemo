@@ -3,6 +3,5 @@ C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUplo
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Debug\BatchUploadAPIDemo.pdb
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Debug\AWSSDK.dll
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\bin\Debug\AWSSDK.xml
-C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\obj\Debug\BatchUploadAPIDemo.csprojResolveAssemblyReference.cache
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\obj\Debug\BatchUploadAPIDemo.exe
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUploadAPIDemo\BatchUploadAPIDemo\obj\Debug\BatchUploadAPIDemo.pdb

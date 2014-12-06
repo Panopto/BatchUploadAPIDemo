@@ -18,10 +18,10 @@ namespace BatchUploadAPIDemo
         private static bool hasBeenInitialized = false;
         private static long DEFAULT_PARTSIZE = 1048576; // Size of each upload in the multipart upload process
         private static string extensionString = ".avi;.asf;.wmv;.mpg;.mpeg;.ps;.ts;.m2v;.mp2;.mod;.mp4;.m4v;.mov;.qt;.3gp;.flv;.f4v;.mp3;.wma;.m2a;.m4a;.f4a"; // File types allowed for upload
-        private static string[] files = new string[] { "foobar.mp4" };
-        private static string userID = "foo";
-        private static string userKey = "bar";
-        private static string folderID = "foo-bar";
+        private static string[] files = new string[] { "C:\\Users\\dliu\\Documents\\Android\\foo.mp4" };
+        private static string userID = "admin";
+        private static string userKey = "panopto123";
+        private static string folderID = "ab7f0650-46c7-4970-a273-c2d89bb25b4f";
         private static string fileLocation = "dn";
 
 
@@ -29,24 +29,24 @@ namespace BatchUploadAPIDemo
         {
             Console.WriteLine();
 
-            // Error handling
-            if (args.Length <= 5)
-            {
-                Usage();
-                Environment.Exit(1);
-            }
+            //// Error handling
+            //if (args.Length <= 5)
+            //{
+            //    Usage();
+            //    Environment.Exit(1);
+            //}
 
-            // Parse parameters
-            Common.SetServer(args[0]);
-            userID = args[1];
-            userKey = args[2];
-            folderID = args[3];
-            fileLocation = args[4];
-            files = new string[args.Length - 5];
-            for (int i = 5; i < args.Length; i++)
-            {
-                files[i - 5] = args[i];
-            }
+            //// Parse parameters
+            //Common.SetServer(args[0]);
+            //userID = args[1];
+            //userKey = args[2];
+            //folderID = args[3];
+            //fileLocation = args[4];
+            //files = new string[args.Length - 5];
+            //for (int i = 5; i < args.Length; i++)
+            //{
+            //    files[i - 5] = args[i];
+            //}
 
             if (selfSigned)
             {
